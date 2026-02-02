@@ -3,45 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Website</title>
+    <title>Govind Tank | Senior Android & Flutter Developer</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        :root {
+            --primary: #0969da;
+            --secondary: #57606a;
+            --bg: #f6f8fa;
+            --card-bg: #ffffff;
+            --text: #24292f;
+            --accent: #0550ae;
+        }
+
+        * { box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6; 
+            color: var(--text); 
+            background-color: var(--bg); 
             margin: 0;
-            background-color: #f6f8fa;
-            color: #24292f;
+            padding: 0;
         }
-        .container {
-            text-align: center;
-            padding: 2rem;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+
+        header { 
+            text-align: center; 
+            padding: 60px 0; 
+            background: linear-gradient(135deg, #0969da 0%, #033d8b 100%);
+            color: white;
+            border-radius: 0 0 50px 50px;
+        }
+
+        header h1 { margin: 0; font-size: 2.5rem; letter-spacing: -1px; }
+        .contact-links { margin-top: 15px; }
+        .contact-links a { color: #e1e4e8; text-decoration: none; margin: 0 10px; font-size: 0.9rem; }
+        .contact-links a:hover { color: white; text-decoration: underline; }
+
+        section { margin-top: 40px; }
+        h2 { border-bottom: 2px solid var(--primary); display: inline-block; padding-bottom: 5px; color: var(--primary); }
+
+        .card { 
+            background: var(--card-bg); 
+            padding: 25px; 
+            margin-bottom: 20px; 
+            border-radius: 12px; 
             border: 1px solid #d0d7de;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
-        h1 { color: #0969da; }
-        p { font-size: 1.2rem; }
-        .status-badge {
-            display: inline-block;
-            padding: 0.25rem 0.75rem;
-            background-color: #dafbe1;
-            color: #1a7f37;
-            border-radius: 20px;
-            font-weight: bold;
-            font-size: 0.9rem;
+
+        .skill-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+            gap: 15px; 
+        }
+
+        .skill-item { background: #eff1f3; padding: 10px 15px; border-radius: 6px; font-size: 0.9rem; }
+        .skill-item strong { color: var(--accent); }
+
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+        .job-title { font-weight: bold; font-size: 1.2rem; color: var(--text); }
+        .job-date { color: var(--secondary); font-size: 0.85rem; }
+        .projects-list { font-style: italic; color: var(--accent); margin: 10px 0; display: block; }
+
+        @media (max-width: 600px) {
+            .job-header { flex-direction: column; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="status-badge">Live on GitHub Pages</div>
-        <h1>Hello, World!</h1>
-        <p>If you can see this, your website is successfully hosted.</p>
-        <small>Time to start building something awesome.</small>
+
+<header>
+    <h1>Govind Tank</h1>
+    <p>Senior Android & Flutter Developer</p>
+    <div class="contact-links">
+        <a href="mailto:govindtank600@gmail.com">Email</a> |
+        <a href="https://www.linkedin.com/in/govindtank">LinkedIn</a> |
+        <a href="https://github.com/govindtank">GitHub</a> |
+        <span>📍 Gandhinagar, India</span>
     </div>
+</header>
+
+<div class="container">
+    <section id="summary">
+        <h2>Professional Summary</h2>
+        <div class="card">
+            <p>Successful Mobile Developer proficiently translates wire-frames and prototypes into reliable code that is highly versatile and remains resilient to glitches, bugs and software updates. App-oriented architect with meticulous attention to detail in strategic design and problem-solving.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Expertise</h2>
+        <div class="skill-grid">
+            <div class="skill-item"><strong>Languages:</strong> Flutter, Java, Kotlin</div>
+            <div class="skill-item"><strong>Architecture:</strong> Clean Architecture, MVVM, MVC</div>
+            <div class="skill-item"><strong>APIs:</strong> GraphQL, RESTful, Sockets</div>
+            <div class="skill-item"><strong>DevOps:</strong> CI/CD, Docker, Git</div>
+            <div class="skill-item"><strong>DI:</strong> Dagger, Hilt</div>
+            <div class="skill-item"><strong>State:</strong> Provider, BLoC</div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        
+        <div class="card">
+            <div class="job-header">
+                <span class="job-title">Senior Software Developer | Rysun Labs Pvt. Ltd.</span>
+                <span class="job-date">APRIL 2022 - PRESENT</span>
+            </div>
+            <span class="projects-list">Projects: DRC (USA), Max’s Fun Club, BAPS Akshar Amrutam, Autozon (IOT)</span>
+            <ul>
+                <li>Led planning, development, and deployment of cross-platform applications[cite: 7].</li>
+                <li>Mentored junior developers and conducted code reviews[cite: 14].</li>
+                <li>Implemented best practices for UI/UX, performance, and security[cite: 12].</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="job-header">
+                <span class="job-title">Software Engineer | Phycom Corporations</span>
+                <span class="job-date">APRIL 2021 - MARCH 2022</span>
+            </div>
+            <span class="projects-list">Projects: La Crosse View, TFA View, La Crosse Alerts</span>
+            <ul>
+                <li>Managed full Android app lifecycle for international clients[cite: 17].</li>
+                <li>Addressed challenges in mobile development cycles through all phases[cite: 20].</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="job-header">
+                <span class="job-title">Remote Android Developer | Micro App Solutions</span>
+                <span class="job-date">AUG 2017 - DEC 2019</span>
+            </div>
+            <span class="projects-list">Projects: Fastrrr, Water Reminder, OfferzZone, Propertty</span>
+            <ul>
+                <li>Designed immersive user interfaces and researched location-based service apps[cite: 28, 29].</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="card">
+            <strong>M.C.A.</strong> | AES College of Computer Studies [cite: 47]<br>
+            <small>Member of Computer Society of India. Projects: Auto SMS App, Speech2Text Attendance[cite: 49, 50].</small>
+        </div>
+    </section>
+</div>
+
 </body>
 </html>
