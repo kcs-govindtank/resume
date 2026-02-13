@@ -1,259 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Govind Tank - Resume</title>
-    <style>
-        :root {
-            --bg-color: #ffffff;
-            --text-color: #333333;
-            --heading-color: #000000;
-            --accent-color: #333333;
-            --border-color: #dddddd;
-            --link-color: #0056b3;
-            --btn-bg: #f0f0f0;
-            --btn-text: #333;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Govind Tank - Senior Mobile Application Developer</title>
 
-        [data-theme="dark"] {
-            --bg-color: #1a1a1a;
-            --text-color: #e0e0e0;
-            --heading-color: #ffffff;
-            --accent-color: #bbbbbb;
-            --border-color: #444444;
-            --link-color: #66b0ff;
-            --btn-bg: #333;
-            --btn-text: #fff;
-        }
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 40px 60px;
+        line-height: 1.5;
+        color: #000;
+        background: #fff;
+    }
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.5;
-            margin: 0;
-            padding: 40px 20px;
-            transition: background-color 0.3s, color 0.3s;
-        }
+    h1 {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
+    h2 {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
 
-        /* Toggle Button */
-        .theme-switch {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: var(--btn-bg);
-            color: var(--btn-text);
-            border: 1px solid var(--border-color);
-            padding: 8px 16px;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: bold;
-        }
-        .theme-switch:hover {
-            opacity: 0.8;
-        }
+    .contact {
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
 
-        /* Header */
-        header {
-            text-align: center;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-        h1 {
-            margin: 0;
-            font-size: 28px;
-            text-transform: uppercase;
-            color: var(--heading-color);
-            letter-spacing: 1px;
-        }
-        .contact-info {
-            margin-top: 10px;
-            font-size: 14px;
-        }
-        .contact-info a {
-            color: var(--link-color);
-            text-decoration: none;
-            margin: 0 5px;
-        }
+    .section-title {
+        margin-top: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 2px solid #000;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
 
-        /* Sections */
-        section {
-            margin-bottom: 25px;
-        }
-        h2 {
-            font-size: 16px;
-            text-transform: uppercase;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-            color: var(--heading-color);
-            letter-spacing: 0.5px;
-        }
+    .job-header {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+    }
 
-        /* Experience Items */
-        .job-block {
-            margin-bottom: 20px;
-        }
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            font-weight: bold;
-            margin-bottom: 5px;
-            color: var(--heading-color);
-        }
-        .job-sub {
-            font-style: italic;
-            font-size: 14px;
-            margin-bottom: 8px;
-            color: var(--accent-color);
-        }
-        ul {
-            margin: 0;
-            padding-left: 20px;
-            font-size: 14px;
-        }
-        li {
-            margin-bottom: 6px;
-        }
+    .job-subheader {
+        display: flex;
+        justify-content: space-between;
+        font-style: italic;
+        margin-bottom: 5px;
+    }
 
-        /* Responsive */
-        @media (max-width: 600px) {
-            .job-header {
-                flex-direction: column;
-            }
-            .theme-switch {
-                position: static;
-                display: block;
-                margin: 0 auto 20px auto;
-                width: fit-content;
-            }
-        }
-    </style>
+    ul {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        padding-left: 18px;
+    }
+
+    .no-spacing li {
+        margin-bottom: 4px;
+    }
+
+    .education-entry {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+    }
+
+</style>
 </head>
+
 <body>
 
-    <button class="theme-switch" onclick="toggleTheme()">Switch Mode</button>
+<h1>GOVIND TANK</h1>
+<h2>Senior Mobile Application Developer (Kotlin | Flutter)</h2>
+<div class="contact">
+    Gandhinagar, Gujarat, India | +91 8460 48 4061 | govindtank600@gmail.com <br>
+    linkedin.com/in/govindtank | govindtank.github.io
+</div>
 
-    <div class="container">
-        <header>
-            <h1>Govind Tank</h1>
-            <div class="contact-info">
-                Gandhinagar, India <br>
-                (+91) 8460 48 4061 | <a href="mailto:govindtank600@gmail.com">govindtank600@gmail.com</a> <br>
-                <a href="https://www.linkedin.com/in/govindtank" target="_blank">LinkedIn</a> | 
-                <a href="https://govindtank.github.io" target="_blank">GitHub</a>
-            </div>
-        </header>
+<div class="section-title">Professional Summary</div>
+<p>
+High-performance Senior Mobile Application Developer with 9+ years of experience architecting scalable Android (Kotlin/Java) and Cross-Platform (Flutter) solutions. Proven expertise in building robust applications serving 100,000+ active users with 99.9% crash-free stability. Deeply specialized in Clean Architecture, MVVM/Bloc patterns, and modern UI toolkits like Jetpack Compose. Demonstrated leadership in full-lifecycle development—from system design to Play Store deployment—delivering secure, media-rich applications with advanced features like Android Auto, background services, and CloudFront content delivery.
+</p>
 
-        <section>
-            <h2>Profile Summary</h2>
-            <ul>
-                <li>Successful Mobile Developer (Android/Flutter) proficient in translating wireframes into reliable code resilient to glitches and updates.</li>
-                <li>Experienced Senior Software Developer with a track record of partnering across departments to produce effective content.</li>
-                <li>App-oriented architect with meticulous attention to detail in strategic design, Clean Architecture, and problem-solving.</li>
-                <li>Proficient in mentoring junior developers and conducting code reviews in agile environments.</li>
-            </ul>
-        </section>
+<div class="section-title">Core Mobile Achievements</div>
+<ul>
+    <li><strong>Scale & Stability:</strong> Scaled "Akshar Amrutam" to 100,000+ downloads while maintaining a 99.95% crash-free session rate via rigorous testing and Crashlytics monitoring.</li>
+    <li><strong>Media Engineering:</strong> Engineered a secure audio streaming engine for "BAPS Prakash" using AWS CloudFront Signed Cookies and audio_service for seamless background playback.</li>
+    <li><strong>Ecosystem Integration:</strong> Successfully integrated Android Auto and complex deep linking strategies, increasing user engagement and retention by 25%.</li>
+    <li><strong>IoT Performance:</strong> Optimized battery usage for IoT hardware companion apps by refactoring background services and implementing efficient BLE communication.</li>
+</ul>
 
-        <section>
-            <h2>Experience</h2>
+<div class="section-title">Technical Skills</div>
+<ul class="no-spacing">
+    <li><strong>Languages:</strong> Kotlin, Java, Dart (Flutter), TypeScript, JavaScript (Node.js), SQL.</li>
+    <li><strong>Android Native:</strong> Android SDK, Jetpack Compose, Coroutines, StateFlow, LiveData, Broadcast Receivers, WorkManager, Android Auto, Material 3 Design.</li>
+    <li><strong>Flutter Ecosystem:</strong> Flutter Bloc, Provider, AutoRoute, Freezed, Method Channels, audio_service, Equatable.</li>
+    <li><strong>Architecture:</strong> Clean Architecture, MVVM, MVI, Repository Pattern, Dependency Injection (Dagger Hilt, Koin).</li>
+    <li><strong>Backend & Cloud:</strong> Node.js, Express.js, Firebase (Auth, Firestore, Remote Config, Cloud Messaging), AWS CloudFront, RESTful APIs, GraphQL.</li>
+    <li><strong>DevOps & Tools:</strong> CI/CD (GitHub Actions), Docker, Git, Gradle, Android Studio, VS Code, Postman, Play Store Console, TestFlight.</li>
+</ul>
 
-            <div class="job-block">
-                <div class="job-header">
-                    <span>Senior Software Developer | Rysun Labs Pvt. Ltd.</span>
-                    <span>Apr 2022 – Present</span>
-                </div>
-                <div class="job-sub">Ahmedabad | Projects: BAPS Akshar Amrutam, DRC (USA), Autozon</div>
-                <ul>
-                    <li>Led the planning, development, testing, and deployment of applications across platforms as a Project Owner.</li>
-                    <li>Designed and maintained Android/Flutter applications using Java/Kotlin and Dart.</li>
-                    <li>Collaborated with product managers and backend engineers to deliver high-quality features.</li>
-                    <li>Mentored junior developers and implemented best practices for UI/UX and security.</li>
-                </ul>
-            </div>
+<div class="section-title">Professional Experience</div>
 
-            <div class="job-block">
-                <div class="job-header">
-                    <span>Software Engineer - Android | Phycom Corporations</span>
-                    <span>Apr 2021 – Mar 2022</span>
-                </div>
-                <div class="job-sub">Ahmedabad | Projects: La Crosse View, TFA View</div>
-                <ul>
-                    <li>Managed product variants and Android app lifecycle for international clients (Lacrosse Technology).</li>
-                    <li>Delivered weekly progress reports to executive staff and managed post-launch support.</li>
-                    <li>Addressed challenges arising in each phase of the mobile development cycle.</li>
-                </ul>
-            </div>
+<div class="job-header">
+    <span>Senior Software Developer L2</span>
+    <span>Jan 2025 – Present</span>
+</div>
+<div class="job-subheader">
+    <span>Rysun Labs Pvt. Ltd.</span>
+    <span>Ahmedabad, India</span>
+</div>
+<ul class="no-spacing">
+    <li><strong>Lead Mobile Engineering:</strong> Directed the complete overhaul of the "BAPS Prakash" application (50k+ users), focusing on secure content delivery and premium user experience.</li>
+    <li><strong>Secure Media Streaming:</strong> Implemented AWS CloudFront Signed Cookies to securely stream copyright-protected audio content, preventing unauthorized access.</li>
+    <li><strong>Advanced Audio Features:</strong> Integrated audio_service to handle complex background audio tasks, lock-screen controls, and Android Auto compatibility.</li>
+    <li><strong>Backend Architecture:</strong> Architected high-concurrency RESTful APIs using Node.js and TypeScript for an internal HCP ERP system.</li>
+</ul>
 
-            <div class="job-block">
-                <div class="job-header">
-                    <span>Remote Android Developer | Micro App Solutions</span>
-                    <span>Aug 2017 – Dec 2019</span>
-                </div>
-                <div class="job-sub">Surat (Remote) | Projects: Fastrrr, Water Reminder, OfferzZone</div>
-                <ul>
-                    <li>Managed all aspects of Android app lifecycle from research and planning through deployment.</li>
-                    <li>Designed immersive user interfaces and developed apps for hyperlocal services.</li>
-                </ul>
-            </div>
+<div class="job-header">
+    <span>Senior Software Developer / Project Owner</span>
+    <span>Apr 2022 – Dec 2024</span>
+</div>
+<div class="job-subheader">
+    <span>Rysun Labs Pvt. Ltd.</span>
+    <span>Ahmedabad, India</span>
+</div>
+<ul class="no-spacing">
+    <li><strong>Flutter Architecture:</strong> Spearheaded the development of "Akshar Amrutam" using Flutter and Clean Architecture.</li>
+    <li><strong>State Management:</strong> Utilized Flutter Bloc to manage complex application states across devices.</li>
+    <li><strong>Global Project Delivery:</strong> Managed end-to-end delivery of international projects (DRC USA, Max's Fun Club South Africa).</li>
+    <li><strong>IoT Integration:</strong> Built Smartindia/Autozon with real-time MQTT communication between mobile devices and IoT hardware.</li>
+</ul>
 
-            <div class="job-block">
-                <div class="job-header">
-                    <span>Android Developer | Stimulus Consultancy</span>
-                    <span>Apr 2016 – Aug 2017</span>
-                </div>
-                <div class="job-sub">Ahmedabad | Projects: CityTadka, Oowomaniya</div>
-                <ul>
-                    <li>Devised documentation for each app, detailing operation aspects and features.</li>
-                    <li>Employed third-party APIs to facilitate seamless access to external cloud data.</li>
-                </ul>
-            </div>
-        </section>
+<div class="job-header">
+    <span>Software Engineer - Android</span>
+    <span>Apr 2021 – Mar 2022</span>
+</div>
+<div class="job-subheader">
+    <span>Phycom Corporations</span>
+    <span>Ahmedabad, India</span>
+</div>
+<ul class="no-spacing">
+    <li><strong>Background Processing:</strong> Engineered robust background services for La Crosse View.</li>
+    <li><strong>Performance Optimization:</strong> Reduced startup time by 30% and memory footprint by 20%.</li>
+    <li><strong>Legacy Migration:</strong> Refactored Java codebases to Kotlin, reducing NullPointerExceptions by 95%.</li>
+</ul>
 
-        <section>
-            <h2>Technical Skills</h2>
-            <ul>
-                <li><strong>Languages:</strong> Flutter, Java, Kotlin, Dart</li>
-                <li><strong>Architecture:</strong> Clean Architecture, MVC, MVVM, Provider, BLoC</li>
-                <li><strong>APIs & Networking:</strong> GraphQL, RESTful APIs, Socket Programming</li>
-                <li><strong>DevOps & Tools:</strong> CI/CD, Docker, Git, Jira, Android Studio</li>
-                <li><strong>Testing:</strong> Unit Testing, UI Testing, Firebase Services</li>
-            </ul>
-        </section>
+<div class="job-header">
+    <span>Remote Android Developer</span>
+    <span>Aug 2017 – Dec 2019</span>
+</div>
+<div class="job-subheader">
+    <span>Micro App Solutions</span>
+    <span>Surat, India</span>
+</div>
+<ul class="no-spacing">
+    <li>Developed utility apps focusing on battery efficiency and overlay permissions.</li>
+    <li>Built hyper-local marketplace using Geofencing APIs.</li>
+</ul>
 
-        <section>
-            <h2>Education</h2>
-            <div class="job-block">
-                <div class="job-header">
-                    <span>M.C.A. | AES College of Computer Studies</span>
-                    <span>2013 – 2015</span>
-                </div>
-                <div class="job-sub">Member of Computer Society of India</div>
-            </div>
-            <div class="job-block">
-                <div class="job-header">
-                    <span>B.C.A. | Navgujarat College of Computer Applications</span>
-                    <span>2010 – 2013</span>
-                </div>
-            </div>
-        </section>
-    </div>
+<div class="job-header">
+    <span>Android Developer</span>
+    <span>Apr 2016 – Aug 2017</span>
+</div>
+<div class="job-subheader">
+    <span>Stimulus Consultancy</span>
+    <span>Ahmedabad, India</span>
+</div>
+<ul class="no-spacing">
+    <li>Early-stage mobile product development and CI/CD setup.</li>
+    <li>Implemented complex GST tax logic with 100% accuracy.</li>
+</ul>
 
-    <script>
-        function toggleTheme() {
-            const body = document.body;
-            const currentTheme = body.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            body.setAttribute('data-theme', newTheme);
-        }
-    </script>
+<div class="section-title">Education</div>
+
+<div class="education-entry">
+    <span>Master of Computer Applications (M.C.A.)</span>
+    <span>2013 – 2015</span>
+</div>
+<p>AES College, Ahmedabad</p>
+
+<div class="education-entry">
+    <span>Bachelor of Computer Applications (B.C.A.)</span>
+    <span>2010 – 2013</span>
+</div>
+<p>Navgujarat College, Ahmedabad</p>
+
 </body>
 </html>
